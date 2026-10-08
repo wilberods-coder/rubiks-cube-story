@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Шесть цветов. Бесконечное любопытство. Интерактивная история кубика Рубика: от идеи 1974 года до культурного феномена.">
+  <title>Кубик Рубика — больше, чем игрушка</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./assets/vendor/gsap.min.js"></script>
+  <script defer src="./assets/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="./assets/vendor/lenis.min.js"></script>
+  <script type="module" src="./script.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#history">Перейти к истории</a>
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Основная навигация">
+    <a class="brand" href="#hero" aria-label="Кубик Рубика — начало"><span class="brand-mark" aria-hidden="true">✳</span> rubik<span class="brand-dot">.</span></a>
+    <div class="nav-links"><a href="#history">История</a><a href="#mechanics">Механика</a><a href="#culture">Влияние</a></div>
+    <a class="nav-cta" href="#mechanics">Заглянуть внутрь <span aria-hidden="true">+</span></a>
+  </nav>
+</header>
+<main>
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="hero-topline"><span>МАЛЕНЬКИЙ КУБ. БОЛЬШОЙ МИР.</span><span>С 1974 ГОДА</span></div>
+    <div class="hero-layout">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="color-ticks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span> ИКОНА ЛЮБОПЫТСТВА</p>
+        <h1 id="hero-title">Кубик Рубика.<br><span>Больше,<br>чем игрушка.</span></h1>
+        <p class="hero-description">Шесть цветов. Миллиарды открытий.<br>Одна идея, которая изменила наш взгляд на мир.</p>
+        <a class="pill" href="#history">Открыть историю <span class="button-dot" aria-hidden="true"></span></a>
+      </div>
+      <div class="hero-visual">
+        <div id="hero-canvas" class="canvas-host" role="img" aria-label="Трёхмерный кубик Рубика. Реагирует на движение указателя и прокрутку."><p class="canvas-fallback">6 цветов.<br>43 квинтиллиона возможностей.</p></div>
+        <div class="cube-caption"><span class="tiny-cross" aria-hidden="true">+</span><span>3 × 3 × 3<br><small>ПРОСТОТА С БЕСКОНЕЧНЫМ ПОТЕНЦИАЛОМ</small></span></div>
+        <div class="cube-controls"><button id="rotate-cube" type="button" aria-label="Повернуть кубик на 90 градусов">Повернуть</button><button id="motion-toggle" type="button" aria-pressed="false">Пауза анимации</button></div>
+      </div>
+    </div>
+    <div class="hero-bottom"><span class="scroll-hint"><i aria-hidden="true"></i> ЛИСТАЙТЕ. ИССЛЕДУЙТЕ. УДИВЛЯЙТЕСЬ.</span><span>01 — 04</span></div>
+  </section>
+
+  <section class="history light-section" id="history" aria-labelledby="history-title">
+    <div class="section-heading"><p class="eyebrow">01 / ИСТОРИЯ</p><span>БУДАПЕШТ, ВЕНГРИЯ</span></div>
+    <div class="history-grid">
+      <div class="history-sticky">
+        <h2 id="history-title">Всё начинается<br>с вопроса.</h2>
+        <p>Как заставить части двигаться,<br>не разрушая целое?</p>
+        <div class="history-art" aria-hidden="true">
+          <span class="drawing-label">ИССЛЕДОВАНИЕ ФОРМЫ / 3 × 3 × 3</span>
+          <svg viewBox="0 0 420 340" class="blueprint"><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="currentColor" stroke-width=".3" opacity=".2"/></pattern></defs><rect width="420" height="340" fill="url(#grid)"/><g fill="none" stroke="currentColor" stroke-width="1.2"><path d="M90 120 210 50 330 120 330 260 210 330 90 260Z M90 120 210 190 330 120 M210 190V330 M130 97 250 167V307 M170 73 290 143V283 M250 73 130 143V283 M290 97 170 167V307 M90 167 210 237 330 167 M90 213 210 283 330 213"/><path d="M70 120V260 M65 120H75 M65 260H75" opacity=".5"/></g><text x="52" y="195" fill="currentColor" font-size="10" transform="rotate(-90 52 195)">3 ЕДИНИЦЫ</text></svg>
+          <span class="drawing-foot">КОНЦЕПТУАЛЬНАЯ СХЕМА · НЕ АРХИВНЫЙ ЧЕРТЁЖ</span>
+        </div>
+      </div>
+      <div class="history-steps">
+        <article class="history-step" data-era="0"><span class="year">1974<span>●</span></span><p class="eyebrow">РОЖДЕНИЕ ИДЕИ</p><h3>Архитектура мысли.</h3><p>Преподаватель архитектуры Эрнё Рубик создаёт в Будапеште подвижную трёхмерную модель. Ему интересно, как связаны пространство, форма и движение.</p><p class="step-note">Первые эксперименты с формой становятся головоломкой.</p></article>
+        <article class="history-step" data-era="1"><span class="year">1977<span>●</span></span><p class="eyebrow">ПЕРВЫЙ ШАГ</p><h3>Магия в ладони.</h3><p>«Магический куб» появляется в продаже в Венгрии. За знакомыми цветами скрывается неожиданно сложная задача: вернуть каждой стороне её цвет.</p><p class="step-note">Bűvös kocka — оригинальное венгерское название.</p></article>
+        <article class="history-step" data-era="2"><span class="year">1980<span>●</span></span><p class="eyebrow">БЕЗ ГРАНИЦ</p><h3>Мир делает поворот.</h3><p>Под именем Rubik’s Cube головоломка выходит на мировой рынок. Объект размером с ладонь становится общим языком любопытства.</p><p class="step-note">От учебной модели — к символу целого поколения.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mechanics" id="mechanics" aria-labelledby="mechanics-title">
+    <div class="section-heading"><p class="eyebrow">02 / МЕХАНИКА</p><span>ГЕНИАЛЬНОСТЬ ВНУТРИ</span></div>
+    <div class="mechanics-sticky">
+      <div class="mechanics-copy"><h2 id="mechanics-title">Всё связано.<br><span>Всё движется.</span></h2><p>26 видимых деталей. Три оси.<br>Один механизм, который держит всё вместе.</p><div class="mechanism-legend"><span><i class="legend-core"></i> Центральная крестовина</span><span><i class="legend-layer"></i> Вращающиеся слои</span></div></div>
+      <div class="mechanics-visual"><div id="mechanics-canvas" class="canvas-host" role="img" aria-label="Условная схема кубика: при прокрутке слои раздвигаются и открывают внутренние оси."><p class="canvas-fallback">8 углов · 12 рёбер · 6 центров</p></div><p class="model-note">Условная схема механизма</p></div>
+      <div class="mechanics-bottom"><span id="mechanics-label">01 / ЕДИНОЕ ЦЕЛОЕ</span><div class="progress-track"><i id="mechanics-progress"></i></div><span>ЛИСТАЙТЕ, ЧТОБЫ РАЗОБРАТЬ</span></div>
+    </div>
+  </section>
+
+  <section class="culture light-section" id="culture" aria-labelledby="culture-title">
+    <div class="section-heading"><p class="eyebrow">03 / КУЛЬТУРНЫЙ КОД</p><span>ГОРАЗДО БОЛЬШЕ ШЕСТИ ГРАНЕЙ</span></div>
+    <h2 id="culture-title" class="reveal">Маленький объект.<br><span>Безграничное влияние.</span></h2>
+    <div class="culture-grid">
+      <article class="culture-card math-card reveal"><span class="card-index">01 / МАТЕМАТИКА</span><div class="number-art">43<span>квинтиллиона</span></div><h3>Хаос с точным решением.</h3><p>43 252 003 274 489 856 000 достижимых состояний. И каждое можно решить за 20 ходов или меньше, если поворот грани на 180° считать одним ходом.</p><a href="https://www.cube20.org/" target="_blank" rel="noopener noreferrer">Исследование числа 20</a></article>
+      <article class="culture-card sport-card reveal"><span class="card-index">02 / СПОРТ</span><div class="number-art">1982<span>первый чемпионат мира</span></div><h3>Когда мысль быстрее рук.</h3><p>Спидкубинг превращает решение в спорт. Алгоритмы, мышечная память и тысячи часов практики — ради нескольких секунд идеального движения.</p><a href="https://www.worldcubeassociation.org/speedcubing-history" target="_blank" rel="noopener noreferrer">История спидкубинга</a></article>
+      <article class="culture-card pop-card reveal"><span class="card-index">03 / ПОП-КУЛЬТУРА</span><div class="color-composition" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><h3>Узнаваем без слов.</h3><p>Шесть цветов стали визуальным языком. В кино, дизайне и искусстве кубик напоминает: за видимой простотой всегда есть что-то большее.</p><a href="https://rubiks.com/history" target="_blank" rel="noopener noreferrer">История Rubik’s</a></article>
+    </div>
+    <div class="closing reveal"><p class="eyebrow">ЛЮБОПЫТСТВО НЕ ИМЕЕТ ВОЗРАСТА</p><p>Следующее открытие —<br><span>в ваших руках.</span></p><a class="pill dark-pill" href="#hero">Ещё один поворот <span class="button-dot" aria-hidden="true"></span></a></div>
+  </section>
+</main>
+<footer><a class="brand" href="#hero">rubik<span class="brand-dot">.</span></a><p>Независимая история одной великой идеи.<br>Неофициальный образовательный проект.</p><a id="github-link" href="./README.md">Исходный код</a><span>1974 — ∞</span></footer>
+<noscript><p class="noscript-note">История доступна без JavaScript. Для интерактивной 3D-модели включите JavaScript.</p></noscript>
+</body>
+</html>
